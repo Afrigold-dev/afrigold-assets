@@ -1,0 +1,9 @@
+{
+  "name": "AfriPlat",
+  "symbol": "APLT",
+  "image": "https://raw.githubusercontent.com/Afrigold-dev/afrgold-assets/main/afriplat.png",
+  "description": "AfriPlat (APLT) is a Solana Token-2022 asset with a 1% transfer fee (cap 0.1) and a fixed 1,000 supply.",
+  "extensions": {
+    "website": "https://afriplat.dev"   // you can replace later with your Pages URL
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "AfriGold",
+  "symbol": "AFGD",
+  "description": "AfriGold token (Token-2022) with a 1% transfer fee capped at 0.05 AFGD and fixed supply.",
+  "image": "https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/afrigold.png",
+  "external_url": "https://afrigold-dev.github.io/afrigold-assets/",
+  "seller_fee_basis_points": 0,
+  "extensions": {
+    "website": "https://afrigold-dev.github.io/afrigold-assets/",
+    "twitter": "https://x.com/AfgdAfrigold",
+    "telegram": "https://t.me/AFGD_Official",
+    "explorer": "https://explorer.solana.com/address/8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG",
+    "raydium_pool": "https://raydium.io/pools/?ammId=BUV4vgrkMARGvsnL4h4pmRxv941mZH4d4VDz3mwFqpxB"
+  }
+}

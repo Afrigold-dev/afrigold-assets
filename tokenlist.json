@@ -1,0 +1,19 @@
+{
+  "name": "AfriGold Official",
+  "logoURI": "https://raw.githubusercontent.com/Afrigold-dev/afrgold-assets/main/afrigold.png",
+  "tags": {},
+  "timestamp": "2025-10-13T00:00:00Z",
+  "tokens": [
+    {
+      "chainId": 101,
+      "address": "8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG",
+      "symbol": "AFGD",
+      "name": "AfriGold",
+      "decimals": 9,
+      "logoURI": "https://raw.githubusercontent.com/Afrigold-dev/afrgold-assets/main/afrigold.png",
+      "extensions": {
+        "website": "https://afrigold-dev.github.io/afrigold-assets/"
+      }
+    }
+  ]
+}

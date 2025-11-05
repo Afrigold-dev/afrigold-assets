@@ -1,0 +1,10 @@
+{
+  "name": "AfriGold",
+  "symbol": "AFGD",
+  "image": "https://raw.githubusercontent.com/Afrigold-dev/afrgold-assets/main/afrgold.png",
+  "description": "AfriGold token (Token-2022) with a 1% transfer fee.",
+  "external_url": "https://afrigold-dev.github.io/afrgold-assets/",
+  "extensions": {
+    "website": "https://afrigold-dev.github.io/afrgold-assets/"
+  }
+}
