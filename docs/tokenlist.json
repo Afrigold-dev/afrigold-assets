@@ -1,0 +1,14 @@
+{
+  "name": "AfriGold",
+  "symbol": "AFGD",
+  "address": "8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG",
+  "decimals": 9,
+  "logoURI": "https://raw.githubusercontent.com/Afrigold-dev/afrgold-assets/main/afrgold.png",
+  "tags": ["community", "token-2022"],
+  "extensions": {
+    "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "transferFeeBps": 100,
+    "transferFeeMax": "50000000",
+    "website": "https://afrigold-dev.github.io/afrgold-assets/"
+  }
+}
