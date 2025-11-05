@@ -1,1 +1,1 @@
-# afrgold-assets
+# afrigold-assets
