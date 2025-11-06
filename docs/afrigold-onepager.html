@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AfriGold (AFGD) — Whitepaper v1.0</title>
+<style>
+  body{margin:40px auto;max-width:860px;padding:0 20px;font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#111}
+  h1,h2,h3{line-height:1.25} code{background:#f6f8fa;border:1px solid #eaecef;border-radius:6px;padding:2px 6px}
+  .muted{color:#666} .box{border:1px solid #eaecef;border-radius:10px;padding:12px 14px;background:#fafbfc}
+  a{color:#0366d6;text-decoration:none} a:hover{text-decoration:underline}
+  @media print{a[href]:after{content:" (" attr(href) ")";font-size:12px;color:#666}}
+</style>
+<body>
+<h1>AfriGold (AFGD) — Whitepaper v1.0</h1>
+<p class="muted">Date: <!-- set date --></p>
+<div class="box">
+<b>Network:</b> Solana Mainnet · <b>Mint:</b> <code>8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG</code> · <b>Program:</b> SPL Token‑2022 · <b>Decimals:</b> 9<br>
+<b>Website:</b> <a href="https://afrigold-dev.github.io/afrigold-assets/">https://afrigold-dev.github.io/afrigold-assets/</a><br>
+<b>JSON Metadata (immutable):</b> <a href="https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/listing-pack/afrigold-v2-mainnet.json">https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/listing-pack/afrigold-v2-mainnet.json</a>
+</div>
+
+<h2>1. Executive Summary</h2>
+<p>AfriGold (AFGD) is a fixed-supply community token on Solana using <b>Token‑2022</b> with a modest <b>1% transfer fee (capped at 0.05 AFGD per transfer)</b> to fund development, marketing and charitable initiatives. The token’s brand and metadata (name, symbol, URI) are locked on-chain; the mint and freeze authorities are revoked, making the supply permanent.</p>
+<ul>
+  <li><b>Chain:</b> Solana (fast, low-fee, high-throughput)</li>
+  <li><b>Supply cap:</b> 1,000,000,000 AFGD (fixed); <b>current minted ≈ 999,976,819.58975806 AFGD</b></li>
+  <li><b>Transfer fee:</b> 1.00% with a hard cap of 0.05 AFGD per transfer</li>
+  <li><b>Immutability:</b> Metadata locked; mint & freeze authorities not set</li>
+  <li><b>Liquidity:</b> Initial pool on Raydium (AMM ID <code>BUV4vgrkMARGvsnL4h4pmRxv941mZH4d4VDz3mwFqpxB</code>)</li>
+  <li><b>Socials:</b> <a href="https://x.com/AfgdAfrigold">Twitter/X</a> · <a href="https://t.me/AFGD_Official">Telegram</a> · <a href="https://afrigold-dev.github.io/afrigold-assets/">Website</a></li>
+</ul>
+
+<h2>2. Mission & Rationale</h2>
+<p>AfriGold aims to cultivate an energized community around a simple, verifiable token with transparent funding for ongoing development and outreach. The capped transfer fee provides predictable funding without runaway “tax” dynamics.</p>
+
+<h2>3. Token Specification</h2>
+<ul>
+  <li><b>Mint:</b> <code>8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG</code></li>
+  <li><b>Program:</b> SPL Token‑2022 (Transfer Fee Extension)</li>
+  <li><b>Decimals:</b> 9</li>
+  <li><b>Ticker:</b> AFGD · <b>Name:</b> AfriGold</li>
+  <li><b>Logo:</b> <a href="https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/afrigold.png">afrigold.png</a></li>
+  <li><b>Metadata URI (immutable):</b> <a href="https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/listing-pack/afrigold-v2-mainnet.json">afrigold-v2-mainnet.json</a></li>
+  <li><b>Authorities:</b>
+    <ul>
+      <li>Mint authority: <i>not set</i> (supply locked)</li>
+      <li>Freeze authority: <i>not set</i></li>
+      <li>Fee config & withdrawal authority: <code>FZSC3GKVMA9X3Y1XzEH3ose1zzUCnXqYuGKJhL9PPfdr</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>4. Transfer Fee Policy</h2>
+<ul>
+  <li><b>Rate:</b> 1% of the transferred amount</li>
+  <li><b>Absolute cap:</b> 0.05 AFGD per transfer</li>
+  <li><b>Collection mechanism:</b> Fees are accumulated in recipient token accounts and are <b>harvestable only</b> by the withdrawal authority (Token‑2022 mechanism).</li>
+  <li><b>Distribution policy (initial):</b>
+    <ul>
+      <li>Development wallet: <i>TBD (e.g., 50%)</i></li>
+      <li>Marketing & Charity wallet: <i>TBD (e.g., 50%)</i></li>
+    </ul>
+  </li>
+  <li><b>Cadence:</b> Withdraw periodically (e.g., weekly); transfer on‑chain to allocation wallets and publish a short transparency update.</li>
+</ul>
+
+<h2>5. Liquidity & Market Structure</h2>
+<ul>
+  <li><b>AMM:</b> Raydium</li>
+  <li><b>Pool (AMM ID):</b> <code>BUV4vgrkMARGvsnL4h4pmRxv941mZH4d4VDz3mwFqpxB</code></li>
+  <li><b>Pair:</b> AFGD / USDC</li>
+</ul>
+
+<h2>6. Governance & Transparency</h2>
+<ul>
+  <li><b>Admin key:</b> <code>FZSC3GKVMA9X3Y1XzEH3ose1zzUCnXqYuGKJhL9PPfdr</code></li>
+  <li>Migrate to multisig; publish allocation wallets & ratios; keep a public ledger of harvested fees and distributions.</li>
+</ul>
+
+<h2>7. Roadmap (initial)</h2>
+<ul>
+  <li><b>Q4 2025</b> — CoinGecko submission; site/docs polish; publish fee wallets & first report.</li>
+  <li><b>Q1 2026</b> — Multisig migration; fee dashboard; additional listings.</li>
+  <li><b>Q2 2026</b> — Community micro‑grants funded from the marketing/charity allocation.</li>
+</ul>
+
+<h2>8. Risks & Disclosures</h2>
+<p>Crypto assets are volatile and can lose value. AfriGold does not represent a security, equity, or claim on profits. No guarantee of liquidity or listings is made. Users must comply with local laws and accept all on‑chain risks.</p>
+
+<h2>9. Official Links</h2>
+<ul>
+  <li>Website: <a href="https://afrigold-dev.github.io/afrigold-assets/">https://afrigold-dev.github.io/afrigold-assets/</a></li>
+  <li>Metadata JSON: <a href="https://raw.githubusercontent.com/Afrigold-dev/afrigold-assets/main/listing-pack/afrigold-v2-mainnet.json">metadata</a></li>
+  <li>Explorer: <a href="https://explorer.solana.com/address/8KbB5DkHTS3ZwWqwe1FUgZvR8kQJWPafU7CRrUL1RjKG">Solana Explorer</a></li>
+  <li>Raydium Pool: <a href="https://raydium.io/pools/?ammId=BUV4vgrkMARGvsnL4h4pmRxv941mZH4d4VDz3mwFqpxB">AMM page</a></li>
+  <li>Twitter/X: <a href="https://x.com/AfgdAfrigold">@AfgdAfrigold</a></li>
+  <li>Telegram: <a href="https://t.me/AFGD_Official">@AFGD_Official</a></li>
+  <li>Primary contact: @AfriGold_AFGD</li>
+</ul>
+</body></html>
